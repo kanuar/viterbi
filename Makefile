@@ -30,6 +30,7 @@ viterbi_test.o: viterbi_test.cpp viterbi.h
 
 viterbi_test: viterbi_test.o viterbi.o
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ -o $@
+	./$@
 
 .PHONY: all clean test
 
