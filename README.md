@@ -135,3 +135,6 @@ decoded.
 The code is self-contained, meaning it depends on nothing but the C++ standard
 library. The purpose is to make it easy to be integrated in any project.
 
+## changes made by Kanuar
+* added a yaml file for GitHub automated workflow
+* updated the Makefile to run the tests for the workflow logs
