@@ -5,7 +5,7 @@
 
 CXX = g++
 
-BINS = viterbi_main viterbi_test
+BINS = viterbi_main viterbi_test test
 SRCS = viterbi.cpp viterbi_main.cpp viterbi_test.cpp
 
 all: $(BINS)
@@ -30,7 +30,6 @@ viterbi_test.o: viterbi_test.cpp viterbi.h
 
 viterbi_test: viterbi_test.o viterbi.o
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ -o $@
-	./$@
 
 .PHONY: all clean test
 
